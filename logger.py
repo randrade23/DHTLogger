@@ -8,7 +8,7 @@ conn = MySQLdb.connect(host= "localhost",
                   passwd=secret.pwd(),
                   db=secret.db())
 cursor = conn.cursor()
-query = "INSERT INTO dht(epoch, temperature, humidity, heatindex) VALUES(%d, %.2f, %.2f, %.2f)"
+query = "INSERT INTO dht(epoch, temperature, humidity, heatindex) VALUES(%d, %f, %f, %f)"
 
 ser = serial.Serial('/dev/ttyACM0', 9600)
 
