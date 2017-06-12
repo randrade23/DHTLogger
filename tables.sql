@@ -1,6 +1,6 @@
 CREATE TABLE dht (
 	epoch int(11) not null
-	humidity float not null,
-	temperature float not null,
-	heatindex float not null
-)
+	humidity decimal(2,2) not null,
+	temperature decimal(2,2) not null,
+	heatindex decimal(2,2) not null
+);
