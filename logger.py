@@ -16,4 +16,4 @@ while True:
     line = ser.readline()
     spl = line.split()
     epoch_time = int(time.time())
-    cursor.execute(query, (epoch_time, spl[0], spl[1], spl[2]))
+    cursor.execute(query, (int(epoch_time), float(spl[0]), float(spl[1]), float(spl[2])))
