@@ -17,6 +17,7 @@ while True:
     spl = line.split()
     print spl
     epoch_time = int(time.time())
+    print (query % (epoch_time, float(spl[0]), float(spl[1]), float(spl[2])))
     cursor.execute(query % (epoch_time, float(spl[0]), float(spl[1]), float(spl[2])))
     conn.commit()
 
